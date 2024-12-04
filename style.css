@@ -1,0 +1,168 @@
+:root {
+    font-family: "Rubik", serif;
+    --white: #FFFFFF;
+    --silver: #F3F3F3;
+    --yellow: #FFD100;
+    --red: rgba(148, 27, 12, 1);
+    --black: rgba(0, 0, 0, 1);
+    --grey: rgba(128, 128, 128, 1);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jim {
+    position: relative;
+    width: 350px;
+    height: 434px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 6px 10px 25px 0 rgba(0, 0, 0, 0.5);
+}
+
+.basket {
+    position: absolute;
+    background-color: var(--black);
+    bottom: 0px;
+    left: 0px;
+    width: 101px;
+    height: 87px;
+    border-radius: 10px;
+}
+
+[src='basket.svg'] {
+    position: absolute;
+    width: 45px;
+    height: 31px;
+    top: 28px;
+    left: 28px;
+}
+
+.info {
+    width: 290px;
+    height: 98px;
+    top: 210px;
+    left: 30px;
+}
+
+
+.title {
+    position: absolute;
+    width: 290px;
+    height: 58px;
+    top: 210px;
+    left: 30px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: var(--black);
+}
+
+.description {
+    position: absolute; 
+    width: 290px;
+    height: 25px;
+    top: 283px;
+    left: 30px;
+    opacity: 70%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25.2px;
+    color: var(--grey);
+}
+
+.past {
+    position: absolute;
+    width: 290px;
+    height: 22px;
+    top: 330px;
+    left: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.6px;
+    text-align: right;
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
+.present {
+    position: absolute;
+    width: 290px;
+    height: 52px;
+    top: 352px;
+    left: 30px;
+    font-weight: 500;
+    font-size: 43px;
+    line-height: 51.6px;
+    text-align: right;
+    color: var(--red);
+}
+
+[src='instrument.png'] {
+    position: absolute;
+    width: 170.03px;
+    height: 200.35px;
+    left: 81.83px;
+    transform: rotate(-30deg);
+}
+
+.mask {
+    position: absolute;
+    width: 350px;
+    height: 180px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cardfeatured {
+    position: relative;
+    width: 380px;
+    height: 454px;
+    margin-bottom: 35px;
+}
+
+.cardnormal {
+    position: relative;
+    width: 380px;
+    height: 454px;
+    padding: 20px;
+}
+
+
+.onemorediv {
+    position: absolute;
+    width: 350px;
+    height: 434px;
+    top: 20px;
+    left: 30px;
+    border-radius: 10px;
+    background-color: var(--yellow);
+    background: linear-gradient(-45deg, rgba(255, 209, 0, 1), rgba(255, 255, 255, 0));
+    box-shadow: 6px 10px 25px 0 rgba(0, 0, 0, 0.5);
+}
+
+[src='salelabel.png'] {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    top: -0px;
+    z-index: 1;
+}
+
+.productcards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .basket::before {
+    border-radius: 10px;
+}
+
+.jim .basket::before {
+    border-radius: 10px;
+} */
+
