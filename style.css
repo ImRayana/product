@@ -15,6 +15,19 @@ body {
     align-items: center;
 }
 
+.productcards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardnormal {
+    position: relative;
+    width: 380px;
+    height: 454px;
+    padding: 20px;
+}
+
 .jim {
     position: relative;
     width: 350px;
@@ -24,22 +37,19 @@ body {
     box-shadow: 6px 10px 25px 0 rgba(0, 0, 0, 0.5);
 }
 
-.basket {
+.mask {
     position: absolute;
-    background-color: var(--black);
-    bottom: 0px;
-    left: 0px;
-    width: 101px;
-    height: 87px;
-    border-radius: 10px;
+    width: 350px;
+    height: 180px;
+    border-radius: 10px 10px 0px 0px;
 }
 
-[src='basket.svg'] {
+[src='instrument.png'] {
     position: absolute;
-    width: 45px;
-    height: 31px;
-    top: 28px;
-    left: 28px;
+    width: 170.03px;
+    height: 200.35px;
+    left: 81.83px;
+    transform: rotate(-30deg);
 }
 
 .info {
@@ -48,7 +58,6 @@ body {
     top: 210px;
     left: 30px;
 }
-
 
 .title {
     position: absolute;
@@ -73,6 +82,25 @@ body {
     font-size: 14px;
     line-height: 25.2px;
     color: var(--grey);
+}
+
+.experiment {
+    position: absolute;
+    background-color: var(--black);
+    bottom: 0px;
+    left: 0px;
+    width: 101px;
+    height: 87px;
+    border-radius: 10px;
+}
+
+.experiment::before {
+    content: url(basket.svg);
+    position: absolute;
+    width: 45px;
+    height: 31px;
+    top: 28px;
+    left: 28px;
 }
 
 .past {
@@ -102,21 +130,6 @@ body {
     color: var(--red);
 }
 
-[src='instrument.png'] {
-    position: absolute;
-    width: 170.03px;
-    height: 200.35px;
-    left: 81.83px;
-    transform: rotate(-30deg);
-}
-
-.mask {
-    position: absolute;
-    width: 350px;
-    height: 180px;
-    border-radius: 10px 10px 0px 0px;
-}
-
 .cardfeatured {
     position: relative;
     width: 380px;
@@ -124,13 +137,13 @@ body {
     margin-bottom: 35px;
 }
 
-.cardnormal {
-    position: relative;
-    width: 380px;
-    height: 454px;
-    padding: 20px;
+[src='salelabel.png'] {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    top: -0px;
+    z-index: 1;
 }
-
 
 .onemorediv {
     position: absolute;
@@ -144,22 +157,7 @@ body {
     box-shadow: 6px 10px 25px 0 rgba(0, 0, 0, 0.5);
 }
 
-[src='salelabel.png'] {
-    position: absolute;
-    width: 86px;
-    height: 86px;
-    top: -0px;
-    z-index: 1;
-}
-
-.productcards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.experiment {
+/* .basket {
     position: absolute;
     background-color: var(--black);
     bottom: 0px;
@@ -167,18 +165,12 @@ body {
     width: 101px;
     height: 87px;
     border-radius: 10px;
-}
+} */
 
-.experiment::before {
-    content: url(basket.svg);
+/* [src='basket.svg'] {
     position: absolute;
     width: 45px;
     height: 31px;
     top: 28px;
     left: 28px;
-}
-
-.cardfeatured .experiment::after {
-    content: '';
-    border-radius: 10px;
-}
+} */
